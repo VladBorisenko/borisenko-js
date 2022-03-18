@@ -1,13 +1,74 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/app.css"/>
   </head>
   <body>
-    <p>Test text in index.pug</p>
+    <div class="container">
+      <div class="header"> 
+        <div class="menu">
+          <div class="logo"> 
+            <button> <img src="./assets/imgs/logo.svg" alt=""/></button>
+          </div>
+          <div class="menu-item"><a href="">Skills</a><a href="">Portfolio</a><a href="">Video</a><a href="">Price</a><a href="">Contacts</a>
+            <div class="lang">
+              <button>en</button><span>/</span>
+              <button>ru</button>
+            </div>
+          </div>
+        </div>
+        <div class="header-contant"> 
+          <h1>Alexa Rise </h1>
+          <p>Save sincere emotions, romantic feelings and<br>happy moments of life together with professional<br>photographer Alexa Rise</p>
+          <button>Hire me </button>
+        </div>
+      </div>
+      <div class="skills"> 
+              <div class="name">
+                <hr/>
+                <h2>Skills</h2>
+              </div>
+        <div class="skills-items"> 
+                <div class="card"><img src="./assets/imgs/camera.svg" alt=""/>
+                  <h4>Digital photography</h4>
+                  <p>High-quality photos in the studio and on the nature</p>
+                </div>
+                <div class="card"><img src="./assets/imgs/video.svg" alt=""/>
+                  <h4>Video shooting</h4>
+                  <p>Capture your moments so that they always stay with you</p>
+                </div>
+                <div class="card"><img src="./assets/imgs/image.svg" alt=""/>
+                  <h4>Retouch</h4>
+                  <p>I strive to make photography surpass reality</p>
+                </div>
+                <div class="card"><img src="./assets/imgs/mic.svg" alt=""/>
+                  <h4>Audio</h4>
+                  <p>Professional sounds recording for video, advertising, portfolio</p>
+                </div>
+        </div>
+      </div>
+      <div class="portfolio">
+              <div class="name">
+                <hr/>
+                <h2>Portfolio</h2>
+              </div>
+        <div class="gallery">
+          <div class="navi"> 
+            <button>Winter</button>
+            <button>Spring</button>
+            <button>Summer</button>
+            <button>Autumn</button>
+          </div>
+          <div class="pic-winter"> <img src="./assets/imgs/winter1.jpg" alt=""/><img src="./assets/imgs/winter2.jpg" alt=""/><img src="./assets/imgs/winter3.jpg" alt=""/><img src="./assets/imgs/winter4.jpg" alt=""/><img src="./assets/imgs/winter5.jpg" alt=""/><img src="./assets/imgs/winter6.jpg" alt=""/></div>
+          <div class="pic-sping"> <img src="./assets/imgs/sping1.jpg" alt=""/><img src="./assets/imgs/sping2.jpg" alt=""/><img src="./assets/imgs/sping3.jpg" alt=""/><img src="./assets/imgs/sping4.jpg" alt=""/><img src="./assets/imgs/sping5.jpg" alt=""/><img src="./assets/imgs/sping6.jpg" alt=""/></div>
+          <div class="pic-summer"> <img src="./assets/imgs/summer1.jpg" alt=""/><img src="./assets/imgs/summer2.jpg" alt=""/><img src="./assets/imgs/summer3.jpg" alt=""/><img src="./assets/imgs/summer4.jpg" alt=""/><img src="./assets/imgs/summer5.jpg" alt=""/><img src="./assets/imgs/summer6.jpg" alt=""/></div>
+          <div class="pic-autumn"> <img src="./assets/imgs/autumn1.jpg" alt=""/><img src="./assets/imgs/autumn2.jpg" alt=""/><img src="./assets/imgs/autumn3.jpg" alt=""/><img src="./assets/imgs/autumn4.jpg" alt=""/><img src="./assets/imgs/autumn5.jpg" alt=""/><img src="./assets/imgs/autumn6.jpg" alt=""/></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

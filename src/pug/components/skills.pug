@@ -1,0 +1,13 @@
+include ../mixins/name-section.pug
+include ../mixins/skills-item.pug
+
+
+.skills 
+  +name-section("Skills")
+
+  .skills-items 
+    +skills-item("./assets/imgs/camera.svg", "Digital photography", "High-quality photos in the studio and on the nature")
+    +skills-item("./assets/imgs/video.svg", "Video shooting", "Capture your moments so that they always stay with you")
+    +skills-item("./assets/imgs/image.svg", "Retouch", "I strive to make photography surpass reality")
+    +skills-item("./assets/imgs/mic.svg", "Audio", "Professional sounds recording for video, advertising, portfolio")
+

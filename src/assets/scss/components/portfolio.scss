@@ -1,0 +1,57 @@
+.portfolio{
+  margin-top: 146px;  
+  .navi{
+    margin-top: 100px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    button{
+      border: 2px solid #BDAE82;
+      color: #BDAE82;
+      width: 220px;
+      height: 55px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    button:hover{
+      color: black;
+    }
+  }
+
+  .pic-winter {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pic-sping {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+
+  .pic-summer {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+
+  .pic-autumn {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+  }
+  
+
+}

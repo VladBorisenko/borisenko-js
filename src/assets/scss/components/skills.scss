@@ -1,0 +1,32 @@
+.skills{
+  padding-top: 130px;
+  padding-left: 25px;
+  padding-right: 25px;
+  .skills-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 100px;
+    .card{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 320px;
+      padding: 0 20px;
+      
+      h4{
+        color: white;
+        font-family: 700;
+        font-size: 20px;
+        padding-top: 57px;
+        padding-bottom: 30px;
+      }
+      p{
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+  }
+}

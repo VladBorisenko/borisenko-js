@@ -1,3 +1,51 @@
+@import "./fonts.scss";
+@import "./reset/reset.scss";
+@import "./components/header.scss";
+@import "./components/skills.scss";
+@import "./components/portfolio.scss";
+@import "./components/video.scss";
+@import "./components/price.scss";
+@import "./components/contact.scss";
+@import "./components/footer.scss";
+@import "./components/adept.scss";
+
 html{
-    background: red;
+    background: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    //font-family: 'Merriweather';
+    //font-family: 'Roboto';
+}
+.container {
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+    //border: 1px solid white;
+    
+}
+
+.name{
+    position: relative;
+    max-width: 700px;
+    left: calc((50% - 350px));
+    hr{
+        size: 5px;
+        width: 100%;
+        color: #ff0000;
+    }
+    h2{
+        color: #BDAE82;
+        font-family: 'Merriweather';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: black;
+        padding: 5px 20px;
+        width: min-content;
+        transform: translate(-50%, -50%);
+    }
 }
