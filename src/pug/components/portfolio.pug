@@ -5,10 +5,10 @@ include ../mixins/name-section.pug
 
   .gallery
     .navi 
-      button.w-btn.active Winter
-      button.sp-btn Spring
-      button.s-btn Summer
-      button.a-btn Autumn
+      button.w-btn.active(data-i18n-key="winter") Winter
+      button.sp-btn(data-i18n-key="spring") Spring
+      button.s-btn(data-i18n-key="summer") Summer
+      button.a-btn(data-i18n-key="autumn") Autumn
     .pic-winter
       img(src="./assets/imgs/winter1.jpg", alt="")
       img(src="./assets/imgs/winter2.jpg", alt="")

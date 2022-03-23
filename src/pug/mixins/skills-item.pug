@@ -1,5 +1,5 @@
-mixin skills-item(img, title, text)
+mixin skills-item(img, title, text, i18h4, i18np)
   .card
     img(src=img, alt="")
-    h4=title
-    p!=text
+    h4(data-i18n-key=i18nh4)=title
+    p(data-i18n-key=i18np)!=text

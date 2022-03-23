@@ -28,6 +28,8 @@ html(lang="en" )
       const picSp = document.querySelector('.pic-spring')
       const picS = document.querySelector('.pic-summer')
       const picA = document.querySelector('.pic-autumn ')
+      const btnRu = document.querySelector('.ru-btn')
+      const btnEn = document.querySelector('.en-btn')
 
 
       lightBtn.addEventListener('click', function(){
@@ -95,5 +97,46 @@ html(lang="en" )
 
       checkStorage()
 
+      const translation = {
+        "en": {
+          "skills": "Skills",
+          'portfolio': 'Portfolio',
+          'video': 'Video',
+          'price': 'Price',
+          'contacts': 'Contacts',
+          
+        },
+        "ru": {
+          "skills": "Навыки",
+          'portfolio': 'Портфолио',
+          'video': 'Видео',
+          'price': 'Цены',
+          'contacts': 'Контакты',
+          
+        },
+      };
+
+
+      let locate = "en"
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .querySelectorAll("[data-i18n-key]")
+          .forEach(translateElement);
+      });
+
+      function translateElement(element) {
+        const key = element.getAttribute("data-i18n-key");
+        const translation = translations[locale][key];
+        element.innerText = translation;
+      }
+
+
+      btnRu.addEventListener('click', language)
+      
+      function language(){
+        console.log(1)
+      }
+
+      
 
       
