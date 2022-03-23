@@ -94,10 +94,11 @@ button{
     position: relative;
     max-width: 700px;
     left: calc((50% - 350px));
+    
     hr{
         size: 5px;
         width: 100%;
-        color: #000000;
+        color: #ff0000;
     }
     h2{
         color: #BDAE82;
@@ -105,12 +106,13 @@ button{
         font-size: 40px;
         font-weight: 700;
         line-height: 80px;
-        position: absolute;
+        position: relative;
+        width: 20px;
         top: 50%;
         left: 50%;
-        background-color: black;
+        background: black;
         padding: 5px 20px;
-        width: min-content;
+        //width: min-content;
         transform: translate(-50%, -50%);
     }
 }

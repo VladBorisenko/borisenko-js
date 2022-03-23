@@ -1,13 +1,70 @@
-// @media (max-width:768px){
-//   .container {
-//     margin: 0 auto;
-//     max-width: 768px;
+@media (max-width:768px){
+  .container {
+    margin: 0 auto;
+    max-width: 768px;
     
-//   }
-//   .header{
-   
-//   }
+  }
+  .header{
+    height: 590px;
+    padding: 0 40px;
+  }
+  .header-contant {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 250px;
+    h1{
+      font-size: 32px;
+      line-height: 64px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 20px;
+     }
+     .h-btn{
+       margin-top: 58px;
+     }
+  }
+  .name{
+    
+    hr{
+      max-width: 364px;
+      left: calc((50% - 182px));
+      position: relative;
+    }
+
+    h2{
+      font-size: 32px;
+      line-height: 40px;
+      
+    }
+  }
+  .skills-items{
+    padding-left: 20px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    .card{
+      
+      
+      h4{
+        color: white;
+        font-family: 700;
+        font-size: 20px;
+        padding-top: 57px;
+        padding-bottom: 30px;
+      }
+      p{
+        
+        line-height: 22px;
+      }
+    }
+  }
 
 
 
-// }
+
+
+
+
+}

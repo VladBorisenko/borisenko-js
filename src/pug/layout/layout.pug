@@ -1,4 +1,4 @@
-html(lang="en" )
+html
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -97,6 +97,11 @@ html(lang="en" )
 
       checkStorage()
 
+
+
+
+
+      let locale = "en";
       const translation = {
         "en": {
           "skills": "Skills",
@@ -104,7 +109,6 @@ html(lang="en" )
           'video': 'Video',
           'price': 'Price',
           'contacts': 'Contacts',
-          
         },
         "ru": {
           "skills": "Навыки",
@@ -112,12 +116,11 @@ html(lang="en" )
           'video': 'Видео',
           'price': 'Цены',
           'contacts': 'Контакты',
-          
         },
       };
 
 
-      let locate = "en"
+      
       document.addEventListener("DOMContentLoaded", () => {
         document
           .querySelectorAll("[data-i18n-key]")
@@ -134,7 +137,15 @@ html(lang="en" )
       btnRu.addEventListener('click', language)
       
       function language(){
-        console.log(1)
+        locale = "ru"
+        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
+      }
+
+      btnEn.addEventListener('click', language)
+      
+      function language(){
+        locale = "en"
+        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
       }
 
       

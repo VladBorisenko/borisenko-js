@@ -1,5 +1,5 @@
 
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -27,7 +27,7 @@
         </div>
         <div class="header-contant"> 
           <h1 data-i18n-key="hero-title">Alexa Rise </h1>
-          <p data-i18n-key="hero-text">Save sincere emotions, romantic feelings and<br>happy moments of life together with professional<br>photographer Alexa Rise</p>
+          <p data-i18n-key="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
           <button class="h-btn" data-i18n-key="hire">Hire me </button>
         </div>
       </div>
@@ -203,6 +203,11 @@
       
       checkStorage()
       
+      
+      
+      
+      
+      let locale = "en";
       const translation = {
         "en": {
           "skills": "Skills",
@@ -210,7 +215,6 @@
           'video': 'Video',
           'price': 'Price',
           'contacts': 'Contacts',
-          
         },
         "ru": {
           "skills": "Навыки",
@@ -218,12 +222,11 @@
           'video': 'Видео',
           'price': 'Цены',
           'contacts': 'Контакты',
-          
         },
       };
       
       
-      let locate = "en"
+      
       document.addEventListener("DOMContentLoaded", () => {
         document
           .querySelectorAll("[data-i18n-key]")
@@ -240,7 +243,15 @@
       btnRu.addEventListener('click', language)
       
       function language(){
-        console.log(1)
+        locale = "ru"
+        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
+      }
+      
+      btnEn.addEventListener('click', language)
+      
+      function language(){
+        locale = "en"
+        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
       }
     </script>
   </body>
