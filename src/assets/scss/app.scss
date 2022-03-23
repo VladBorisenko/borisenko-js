@@ -17,14 +17,79 @@ html{
     //font-family: 'Merriweather';
     //font-family: 'Roboto';
 }
+
+html.light{
+    background: rgb(255, 255, 255);
+    h2{
+        background: white;
+        color: black;
+    }
+    .skills-items {
+        .card{
+            h4{
+                color: black;
+            }
+            p{
+                color: black;
+            }
+        }
+    }
+    .navi{
+        button{
+            color: black;
+        }
+        button:hover{
+            color: rgb(255, 255, 255);
+        }
+        .active{
+            color: rgb(255, 255, 255);
+          }
+    }
+    .active-pic{
+        display: flex;
+    }
+      
+    .price-cards{
+        .price-card{
+            h4{
+                color: black;
+            }
+            p{
+                color: black;
+            }
+
+        }
+    }
+    .menu{
+        .menu-item{
+            .dark-btn{
+                display: inline;
+            }
+            .light-btn{
+                display: none;
+            }
+        }
+    }
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-    max-width: 1480px;
-    padding: 0 20px;
+    max-width: 1440px;
+    
     margin: 0 auto;
     //border: 1px solid white;
     
 }
-
+button{
+    background: none;
+    border: none;
+}
 .name{
     position: relative;
     max-width: 700px;
@@ -32,7 +97,7 @@ html{
     hr{
         size: 5px;
         width: 100%;
-        color: #ff0000;
+        color: #000000;
     }
     h2{
         color: #BDAE82;

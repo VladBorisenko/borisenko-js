@@ -1,0 +1,9 @@
+include ../mixins/name-section.pug
+include ../mixins/price-item.pug
+
+.price#price
+  +name-section("Price")
+  .price-cards
+    +price-item("Standart", "500 $", "One location<br>120 photos in color<br>12 photos in retouch<br>Readiness 2-3 weeks<br>Make up, visage", "Order shooting")
+    +price-item("Premium", "700 $", "One or two locations<br>200 photos in color<br>20 photos in retouch<br>Readiness 1-2 weeks<br>Make up, visage", "Order shooting")
+    +price-item("Gold", "1000 $", "Three locations or more<br>300 photos in color<br>50 photos in retouch<br>Readiness 1 week<br>Make up, visage, hairstyle", "Order shooting")

@@ -1,0 +1,56 @@
+.footer{
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: black;
+  .left-section{
+    display: flex;
+    gap: 20px;
+    span{
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+  .middle-section{
+    p{
+      color: white;
+      font-size: 20px;
+      line-height: 50px;
+    }
+  }
+  .right-section{
+    display: flex;
+    gap: 20px;
+    a{
+      width: 32px;
+      height: 32px;
+    }
+    .inst{
+      background-image: url(../imgs/inst.svg);
+    }
+    .fb{
+      background-image: url(../imgs/fb.svg);
+    }
+    .tw{
+      background-image: url(../imgs/tw.svg);
+    }
+    .pint{
+      background-image: url(../imgs/pint.svg);
+    }
+
+    .inst:hover{
+      background-image: url(../imgs/inst-hover.svg);
+    }
+    .fb:hover{
+      background-image: url(../imgs/fb-hover.svg);
+    }
+    .tw:hover{
+      background-image: url(../imgs/tw-hover.svg);
+    }
+    .pint:hover{
+      background-image: url(../imgs/pint-hover.svg);
+    }
+    
+  }
+}

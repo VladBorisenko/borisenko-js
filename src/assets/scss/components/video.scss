@@ -1,0 +1,28 @@
+.video{
+  margin-top: 140px;
+  
+  .play{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1400px;
+    background-image: url(../imgs/player.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 705px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .play-btn{
+      width: 130px;
+      background-image: url(../imgs/play.svg);
+      height: 130px;
+      
+    }
+    .play-btn:hover{
+      background: none;
+      width: 130px;
+      background-image: url(../imgs/play-hover.svg);
+      height: 130px;
+    }
+  }
+}

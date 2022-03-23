@@ -15,20 +15,25 @@
     }
     button:hover{
       color: black;
+      background-color: #BDAE82;
     }
+    .active{
+      background: #BDAE82;
+      color: black;
+    }
+    
   }
 
   .pic-winter {
     margin-top: 60px;
-    display: flex;
     gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
+    display: flex;
   }
 
-  .pic-sping {
+  .pic-spring {
     margin-top: 60px;
-    display: flex;
     gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
@@ -37,7 +42,6 @@
 
   .pic-summer {
     margin-top: 60px;
-    display: flex;
     gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
@@ -45,13 +49,16 @@
   }
 
   .pic-autumn {
+    
     margin-top: 60px;
-    display: flex;
     gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
     display: none;
   }
+
+  
+  
   
 
 }

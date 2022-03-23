@@ -4,36 +4,43 @@
   background-image: url(../imgs/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 910px;
+  height: 900px;
 }
 span{
   color: white;
 }
 
-button{
+.logo-btn{
   border: none;
   color: white;
-  
+  background-image: url(../imgs/logo.svg);
+  width: 50px;
+  height: 50px;
 }
-button:hover{
-  color: #bdae82;
-  border-color: #bdae82;
-  background-color: #bdae82;
+.logo-btn:hover{
+  background-image: url(../imgs/logo-hover.svg);
 }
 .menu{
   display: flex;
   justify-content: space-between;
   height: 90px;
   align-items: center;
+  padding: 0 20px;
+  
 
   .menu-item{
     display: flex;
     gap: 30px;
+    align-items: center;
     a{
       text-decoration: none;
       color: white;
       font-size: 20px;
       font-weight: 400;
+      
+    }
+    a:hover{
+      color: #bdae82;
     }
     .lang{
       display: flex;
@@ -41,10 +48,42 @@ button:hover{
       button{
         font-size: 20px;
         font-weight: 600;
-        
+        color: white;
+      }
+      button:hover{
+        background: none;
+        color: #bdae82;
       }
       span{
         font-size: 20px;
+      }
+    }
+    .color{
+      button:hover{
+        background: none;
+      }
+      .dark-btn{
+        display: none;
+        width: 45px;
+        background-image: url(../imgs/dark.svg);
+        height: 45px;
+        background-repeat: no-repeat;
+      }
+      .dark-btn:hover{
+        width: 45px;
+        background-image: url(../imgs/dark-hover.svg);
+        height: 45px;
+        background-repeat: no-repeat;
+      }
+      .light-btn{
+        width: 45px;
+        background-image: url(../imgs/light.svg);
+        height: 45px;
+      }
+      .light-btn:hover{
+        width: 45px;
+        background-image: url(../imgs/light-hover.svg);
+        height: 45px;
       }
     }
   }
@@ -64,12 +103,15 @@ button:hover{
     line-height: 40px;
     margin-top: 35px;
   }
-  button{
+  .h-btn{
     font-size: 20px;
     line-height: 40px;
     background: #bdae82;
     color: black;
     padding: 8px 74px;
     margin-top: 25px;
+  }
+  .h-btn:hover{
+    color: white;
   }
 }

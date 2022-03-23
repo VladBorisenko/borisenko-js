@@ -1,0 +1,58 @@
+.contact{
+    margin-top: 100px;
+    width: 100%;
+    background-image: url(../imgs/contacts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    p{
+      font-size: 40px;
+      font-family: 'Merriweather';
+      font-weight: 700;
+      line-height: 80px;
+      color: rgba(189, 174, 130, 1);
+      margin-bottom: 18px;
+    }
+    input{
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 2px solid #BDAE82;
+      height: 50px;
+      padding-left: 17px;
+      
+      color: #BDAE82;
+      font-size: 20px;
+      
+    }
+    .input-mess{
+      height: 100px;
+      margin-bottom: 10px;
+      padding-bottom: 50px;
+    }
+
+    input::placeholder {
+      color: #BDAE82;
+      font-size: 20px;
+    }
+    
+    .contact-form__button{
+      color: black;
+      background: #BDAE82;
+      padding: 8px 43px;
+      width: max-content;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .contact-form__button:hover{
+      color: white;
+    }
+  }
+}
