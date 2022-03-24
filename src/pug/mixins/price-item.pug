@@ -1,6 +1,11 @@
-mixin price-item(title, price, text, btn)
+mixin price-item(title, price, p1, p2, p3, p4, p5, btn, i18np1, i18np2, i18np3, i18np4, i18np5, i18nb)
   .price-card
     h4=title
     span=price
-    p!=text
-    button.price-btn=btn 
+    .p_all
+      p(data-i18n-key=i18np1)=p1
+      p(data-i18n-key=i18np2)=p2
+      p(data-i18n-key=i18np3)=p3
+      p(data-i18n-key=i18np4)=p4
+      p(data-i18n-key=i18np5)=p5
+    button.price-btn(data-i18n-key=i18nb)=btn 
