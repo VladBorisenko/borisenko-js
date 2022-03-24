@@ -203,56 +203,36 @@
       
       checkStorage()
       
-      
-      
-      
-      
-      let locale = "en";
-      const translation = {
-        "en": {
-          "skills": "Skills",
+      let arrLang = {
+        'en': {
+          'skills': 'Skills',
           'portfolio': 'Portfolio',
           'video': 'Video',
           'price': 'Price',
           'contacts': 'Contacts',
         },
-        "ru": {
-          "skills": "Навыки",
+        'ru': {
+          'skills': 'Навыки',
           'portfolio': 'Портфолио',
           'video': 'Видео',
           'price': 'Цены',
           'contacts': 'Контакты',
-        },
-      };
-      
-      
-      
-      document.addEventListener("DOMContentLoaded", () => {
-        document
-          .querySelectorAll("[data-i18n-key]")
-          .forEach(translateElement);
-      });
-      
-      function translateElement(element) {
-        const key = element.getAttribute("data-i18n-key");
-        const translation = translations[locale][key];
-        element.innerText = translation;
+        }
       }
       
+        $(function() {
+          $('.translate').click(function() {
+            let lang = $(this).attr('id');
       
-      btnRu.addEventListener('click', language)
+            $('.lang').each(function(index, item) {
+              $(this).text(arrLang[lang][$(this).attr('key')]);
+            });
+          });
+        });
       
-      function language(){
-        locale = "ru"
-        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
-      }
       
-      btnEn.addEventListener('click', language)
       
-      function language(){
-        locale = "en"
-        document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
-      }
+      
     </script>
   </body>
 </html>
