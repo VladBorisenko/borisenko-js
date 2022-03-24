@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <meta charset="UTF-8"/>
@@ -11,13 +12,18 @@
       <div class="header"> 
         <div class="menu">
           <div class="logo"> 
-            <button class="logo-btn"> </button>
+            <button class="logo-btn"></button>
           </div>
-          <div class="menu-item"><a href="#price" data-i18n-key="skills">Skills</a><a href="#portfolio" data-i18n-key="portfolio">Portfolio</a><a href="#video" data-i18n-key="video">Video</a><a href="#price" data-i18n-key="price">Price</a><a href="#contact" data-i18n-key="contacts">Contacts</a>
+          <div class="menu-item">
+            <div class="nav-menu nav-active">
+              <div class="nav"><a href="#skills" data-i18n-key="skills">Skills</a><a href="#portfolio" data-i18n-key="portfolio">Portfolio</a><a href="#video" data-i18n-key="video">Video</a><a href="#price" data-i18n-key="price">Price</a><a href="#contact" data-i18n-key="contacts">Contacts</a></div>
+              <button class="close"></button>
+            </div>
             <div class="lang">
-              <button class="en-btn">en</button><span>/</span>
+              <button class="en-btn act">en</button><span>/</span>
               <button class="ru-btn">ru</button>
             </div>
+            <button class="mobile"></button>
             <div class="color">
               <button class="dark-btn"> </button>
               <button class="light-btn"></button>
@@ -31,7 +37,8 @@
         </div>
       </div>
       <div class="skills" id="skills"> 
-              <div class="name"><span class="line"></span>
+              <div class="name">
+                <hr/>
                 <h2 class="title" data-i18n-key="skills">Skills</h2>
               </div>
         <div class="skills-items"> 
@@ -54,7 +61,8 @@
         </div>
       </div>
       <div class="portfolio" id="portfolio">
-              <div class="name"><span class="line"></span>
+              <div class="name">
+                <hr/>
                 <h2 class="title" data-i18n-key="portfolio">Portfolio</h2>
               </div>
         <div class="gallery">
@@ -71,7 +79,8 @@
         </div>
       </div>
       <div class="video" id="video">
-              <div class="name"><span class="line"></span>
+              <div class="name">
+                <hr/>
                 <h2 class="title" data-i18n-key="video">Video</h2>
               </div>
         <div class="play">
@@ -79,7 +88,8 @@
         </div>
       </div>
       <div class="price" id="price">
-              <div class="name"><span class="line"></span>
+              <div class="name">
+                <hr/>
                 <h2 class="title" data-i18n-key="price">Price</h2>
               </div>
         <div class="price-cards">
@@ -148,6 +158,29 @@
         const picA = document.querySelector('.pic-autumn ')
         const btnRu = document.querySelector('.ru-btn')
         const btnEn = document.querySelector('.en-btn')
+        const btnMob = document.querySelector('.mobile')
+        const btnCl = document.querySelector('.close')
+        const nav = document.querySelector('.nav-menu')
+        
+        
+        
+        
+        btnMob.addEventListener('click', function(){
+          nav.style.right='0'
+          
+        })
+        
+        
+         btnCl.addEventListener('click', function(){
+          nav.style.right='-500px'
+        })
+        
+        
+        
+        
+        
+        
+        
         
         
         lightBtn.addEventListener('click', function(){
@@ -316,18 +349,43 @@
         
         
             btnRu.addEventListener('click', function(){
-              console.log(1)
+              this.classList.add('act')
+              btnEn.classList.remove('act')
               locale = 'ru'
+              localStorage.setItem('locRu', 'ru')
+              localStorage.removeItem('locEn')
               document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
             })
            
         
         
             btnEn.addEventListener('click', function(){
-              console.log(1)
+              btnRu.classList.remove('act')
+              this.classList.add('act')
               locale = 'en'
+              localStorage.setItem('locEn', 'en')
+              localStorage.removeItem('locRu')
               document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
             })
+        
+            function checkLang(){
+              if(localStorage.getItem('locRu') === 'ru' ) {
+                locale = 'ru'
+                btnRu.classList.add('act')
+                btnEn.classList.remove('act')
+              }else{
+                console.log('eng')
+                btnEn.classList.add('act')
+                btnRu.classList.remove('act')
+              }
+            }
+        
+        
+             checkLang()
+        
+        
+        
+             
       </script>
     </div>
   </body>

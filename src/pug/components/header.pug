@@ -1,18 +1,22 @@
 .header 
   .menu
     .logo 
-      button.logo-btn 
+      button.logo-btn
        
     .menu-item
-      a(href="#price", data-i18n-key="skills") Skills
-      a(href="#portfolio", data-i18n-key="portfolio") Portfolio
-      a(href="#video", data-i18n-key="video") Video
-      a(href="#price", data-i18n-key="price") Price
-      a(href="#contact", data-i18n-key="contacts") Contacts
+      .nav-menu.nav-active
+        .nav
+          a(href="#skills", data-i18n-key="skills") Skills
+          a(href="#portfolio", data-i18n-key="portfolio") Portfolio
+          a(href="#video", data-i18n-key="video") Video
+          a(href="#price", data-i18n-key="price") Price
+          a(href="#contact", data-i18n-key="contacts") Contacts
+        button.close
       .lang
-        button.en-btn en
+        button.en-btn.act en
         span /
         button.ru-btn ru
+      button.mobile
       .color
         button.dark-btn 
         button.light-btn

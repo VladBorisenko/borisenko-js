@@ -31,8 +31,31 @@ html
           const picA = document.querySelector('.pic-autumn ')
           const btnRu = document.querySelector('.ru-btn')
           const btnEn = document.querySelector('.en-btn')
+          const btnMob = document.querySelector('.mobile')
+          const btnCl = document.querySelector('.close')
+          const nav = document.querySelector('.nav-menu')
+
+
 
         
+          btnMob.addEventListener('click', function(){
+            nav.style.right='0'
+            
+          })
+
+
+           btnCl.addEventListener('click', function(){
+            nav.style.right='-500px'
+          })
+
+          
+
+          
+          
+
+
+
+
           lightBtn.addEventListener('click', function(){
             html.classList.add('light')
             localStorage.setItem('htmlLight', 'light')
@@ -199,20 +222,43 @@ html
  
 
               btnRu.addEventListener('click', function(){
-                console.log(1)
+                this.classList.add('act')
+                btnEn.classList.remove('act')
                 locale = 'ru'
+                localStorage.setItem('locRu', 'ru')
+                localStorage.removeItem('locEn')
                 document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
               })
              
 
 
               btnEn.addEventListener('click', function(){
-                console.log(1)
+                btnRu.classList.remove('act')
+                this.classList.add('act')
                 locale = 'en'
+                localStorage.setItem('locEn', 'en')
+                localStorage.removeItem('locRu')
                 document.querySelectorAll("[data-i18n-key]").forEach(translateElement);
               })
       
+              function checkLang(){
+                if(localStorage.getItem('locRu') === 'ru' ) {
+                  locale = 'ru'
+                  btnRu.classList.add('act')
+                  btnEn.classList.remove('act')
+                }else{
+                  console.log('eng')
+                  btnEn.classList.add('act')
+                  btnRu.classList.remove('act')
+                }
+              }
 
+
+               checkLang()
+
+
+
+               
       
 
       

@@ -1,7 +1,7 @@
 .price{
-  margin-top: 140px;
+  margin-top: 100px;
   .price-cards{
-    
+    margin-top: 55px;
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -34,7 +34,8 @@
       .p_all{
         display: flex;
         flex-direction: column;
-        margin-top: 13px;
+        margin-top: 30px;
+        gap: 20px;
         
         p{
           font-size: 18px;
@@ -51,9 +52,12 @@
         background: #BDAE82;
         padding: 8px 43px;
         margin-top: 50px;
+        transition: 0.2s linear;
       }
       .price-btn:hover{
         color: white;
+        box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	      transform: translatey(-0.65em);
       }
     }
   }

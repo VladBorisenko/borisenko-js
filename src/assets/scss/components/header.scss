@@ -15,6 +15,7 @@ span{
   background-image: url(../imgs/logo.svg);
   width: 50px;
   height: 50px;
+  transition: 0.2s linear;
 }
 .logo-btn:hover{
   background-image: url(../imgs/logo-hover.svg);
@@ -31,16 +32,29 @@ span{
     display: flex;
     gap: 30px;
     align-items: center;
-    a{
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
-      font-weight: 400;
-      
+    .nav{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        transition: 0.2s linear;
+      }
+      a:hover{
+        color: #bdae82;
+        box-shadow: 0 0.5em 0.5em -0.5em #ffa260;
+	      transform: translatey(-0.2em);
+      }
     }
-    a:hover{
-      color: #bdae82;
+    .nav-menu{
+      display: flex;
+
     }
+
+    
     .lang{
       display: flex;
       gap: 9px;
@@ -48,6 +62,7 @@ span{
         font-size: 20px;
         font-weight: 600;
         color: white;
+        transition: 0.2s linear;
       }
       button:hover{
         background: none;
@@ -56,6 +71,22 @@ span{
       span{
         font-size: 20px;
       }
+      .act{
+        color: #bdae82;
+      }
+    }
+
+    .mobile{
+      background: url(../imgs/mm.png);
+      width: 50px;
+      height: 50px;
+      display: none;
+      
+    }
+    .mobile:hover{
+      background-image: url(../imgs/mm-hover.png);
+      width: 50px;
+      height: 50px;
     }
     .color{
       button:hover{
@@ -67,6 +98,7 @@ span{
         background-image: url(../imgs/dark.svg);
         height: 45px;
         background-repeat: no-repeat;
+        transition: 0.2s linear;
       }
       .dark-btn:hover{
         width: 45px;
@@ -78,6 +110,7 @@ span{
         width: 45px;
         background-image: url(../imgs/light.svg);
         height: 45px;
+        transition: 0.2s linear;
       }
       .light-btn:hover{
         width: 45px;
@@ -110,8 +143,12 @@ span{
     color: black;
     padding: 8px 74px;
     margin-top: 25px;
+    transition: 0.2s linear;
   }
   .h-btn:hover{
     color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	  transform: translatey(-0.65em);
   }
+  
 }

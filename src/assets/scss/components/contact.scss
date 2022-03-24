@@ -50,9 +50,12 @@
       width: max-content;
       font-size: 20px;
       line-height: 40px;
+      transition: 0.2s linear;
     }
     .contact-form__button:hover{
       color: white;
+      box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	    transform: translatey(-0.65em);
     }
   }
 }

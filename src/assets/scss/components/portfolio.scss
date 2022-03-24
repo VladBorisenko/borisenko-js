@@ -1,7 +1,7 @@
 .portfolio{
-  margin-top: 146px;  
+  margin-top: 120px;  
   .navi{
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -12,10 +12,11 @@
       height: 55px;
       font-size: 20px;
       line-height: 40px;
+      transition: 0.2s linear;
     }
     button:hover{
       color: black;
-      background-color: #BDAE82;
+      box-shadow: inset 0 0 0 2em #BDAE82; 
     }
     .active{
       background: #BDAE82;
@@ -57,7 +58,13 @@
     display: none;
   }
 
-  
+  img{
+    transition: 1s;
+  }
+
+  img:hover{
+    transform: scale(1.1);
+  }
   
   
 

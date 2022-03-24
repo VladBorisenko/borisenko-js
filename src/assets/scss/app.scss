@@ -16,13 +16,19 @@ html{
     font-weight: normal;
     //font-family: 'Merriweather';
     //font-family: 'Roboto';
+    
 }
 
 html.light{
-    background: rgb(255, 255, 255);
-    h2{
-        background: white;
-        color: black;
+    background-color: white;
+    .name{
+        h2{
+            background: white;
+            color: black;
+        }
+        hr{
+            background: black;
+        }
     }
     .skills-items {
         .card{
@@ -54,8 +60,10 @@ html.light{
             h4{
                 color: black;
             }
-            p{
-                color: black;
+            .p_all{
+                p{
+                    color: black;
+                }
             }
 
         }
@@ -92,7 +100,7 @@ button{
     margin:0 auto;
     justify-content: space-evenly;
     max-width:700px;
-    border: 1px solid white;
+    
     
     
     h2{
@@ -101,19 +109,23 @@ button{
         font-size: 40px;
         font-weight: 700;
         line-height: 80px;
+        padding: 0 20px;
+        background: black;
+        z-index: 2;
         position: relative;
-        flex:1 0 auto;
-        
         width: max-content;
-        margin-left: 350px;
+        margin: 0 auto;
+        top: 0;
+       
     }
-    .line{
-        
-        color: #BDAE82;
-        width:700px;
-        height:2px;
-        
-        
+    hr{
+        height: 2px;
+        background-color: #BDAE82;
+        border: none;
+        position: relative;
+        top: 50%;
+        z-index: 1;
+        margin: 0;
     }
 
 }

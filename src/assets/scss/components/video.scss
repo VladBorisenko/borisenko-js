@@ -1,9 +1,9 @@
 .video{
-  margin-top: 140px;
+  margin-top: 100px;
   
   .play{
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 60px;
     max-width: 1400px;
     background-image: url(../imgs/player.jpg);
     background-repeat: no-repeat;
@@ -16,13 +16,14 @@
       width: 130px;
       background-image: url(../imgs/play.svg);
       height: 130px;
-      
+      background-size: cover;
     }
     .play-btn:hover{
       background: none;
       width: 130px;
       background-image: url(../imgs/play-hover.svg);
       height: 130px;
+      background-size: cover;
     }
   }
 }
