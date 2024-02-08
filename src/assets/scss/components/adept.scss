@@ -17,8 +17,16 @@
     padding: 0 40px;
 
     .menu-item{
+      gap: 15px;
       .mobile{
-        display: block;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+      }
+      .mobile:hover{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
       }
       .nav-active{
         position: fixed;
@@ -26,7 +34,7 @@
         right: -500px;
         display: block;
         background-color: black;
-        width: 400px;
+        width: 320px;
         height: 100vh;
         z-index: 5;
         transition: 0.5s linear;
@@ -39,22 +47,45 @@
           
         }
         .close{
-          width: 50px;
-          height: 50px;
-          background-image: url(../imgs/close.png);
-          position: absolute;
+          width: 30px;
+          height: 30px;
+          background-size: cover;
           right: 60px;
           top: 20px;
         }
         .close:hover{
-          width: 50px;
-          height: 50px;
-          background-image: url(../imgs/close-hover.png);
+          width: 30px;
+          height: 30px;
         }
         .close:active{
           .nav-active{
             display: none;
           }
+        }
+      }
+      .color{
+        button:hover{
+          background: none;
+        }
+        .dark-btn{
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+        }
+        .dark-btn:hover{
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+        }
+        .light-btn{
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+        }
+        .light-btn:hover{
+          width: 30px;
+          height: 30px;
+          background-size: cover;
         }
       }
     }
@@ -199,4 +230,267 @@
 
 
 
+}
+@media (max-width:321px){
+  html{
+    .name{
+      max-width: 320px;
+      h2{
+        font-size: 10px;
+        
+      }
+      hr{
+        height: 1px;
+        width: 100%;
+      }
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 320px;
+      
+    }
+  }
+  
+  .header{
+    height: 300px;
+    padding: 0 10px;
+    .menu{
+      margin-top: 20px;
+      height: 50px;
+      .menu-item{
+        
+        gap: 20px;
+        .mobile{
+          display: block;
+        }
+        .lang{
+          gap: 4px;
+        }
+        .nav-active{
+          position: fixed;
+          top: 0;
+          right: -500px;
+          display: block;
+          background-color: black;
+          width: 320px;
+          height: 50vh;
+          z-index: 5;
+          transition: 0.5s linear;
+          .nav{
+            flex-direction: column;
+            position: absolute;
+            align-items: flex-start;
+            left: 50px;
+            top: 50px;
+            gap: 15px;
+            a{
+              font-size: 16px;
+            }
+          }
+          .close{
+            width: 30px;
+            height: 30px;
+            background-image: url(../imgs/close.png);
+            position: absolute;
+            right: 30px;
+            top: 20px;
+          }
+          .close:hover{
+            width: 30px;
+            height: 30px;
+            background-image: url(../imgs/close-hover.png);
+          }
+          .close:active{
+            .nav-active{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  
+    .header-contant {
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 250px;
+      h1{
+        font-size: 25px;
+        line-height: 40px;
+        width: 200px;
+        height: 40px;
+        align-items: center;
+      }
+      p{
+        font-size: 12px;
+        line-height: 24px;
+        margin-top: 10px;
+        width: 170px;
+      }
+      .h-btn{
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 8px 15px;
+        width: 130px;
+      }
+    }
+    .name{
+      
+      hr{
+        max-width: 364px;
+        left: calc((50% - 182px));
+        position: relative;
+      }
+
+      h2{
+        font-size: 32px;
+        line-height: 40px;
+        
+      }
+    }
+  }
+  .skills{
+    padding-top: 15px;
+    .skills-items{
+      padding-left: 15px;
+      padding-right: 15px;
+      flex-wrap: wrap;
+      row-gap: 80px;
+      .card{
+        
+        
+        h4{
+          color: white;
+          font-family: 700;
+          font-size: 20px;
+          padding-top: 40px;
+          padding-bottom: 30px;
+        }
+        p{
+          
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .portfolio{
+    margin-top: 150px; 
+    .navi{
+      margin-top: 50px;
+      flex-wrap: wrap;
+      padding: 0 60px;
+    }
+    .pic-winter {
+      margin-top: 30px;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      display: flex;
+    }
+  
+    .pic-spring {
+      margin-top: 30px;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      display: none;
+    }
+  
+    .pic-summer {
+      margin-top: 30px;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      display: none;
+    }
+  
+    .pic-autumn {
+      
+      margin-top: 30px;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      display: none;
+    }
+    img{
+      width: 135px;
+    }
+    img:hover{
+      transform: scale(1.2);
+    }
+  }
+
+  .video{
+    margin-top: 75px;
+    .play{
+      margin-top: 50px;
+      height: 418px;
+      .play-btn{
+        width: 65px;
+        background-image: url(../imgs/play.svg);
+        height: 65px;
+        
+        
+      }
+      .play-btn:hover{
+        background: none;
+        width: 65px;
+        background-image: url(../imgs/play-hover.svg);
+        height: 65px;
+      }
+    }
+  }
+  .price{
+    margin-top: 80px;
+    .price-cards{
+      flex-wrap: wrap;
+      margin-top: 50px;
+      gap: 47px;
+      .price-card{
+        width: 420px;
+      }
+    }
+  }
+  .contact{
+    margin-top: 85px;
+    height: 600px;
+    .contact-form{
+      
+      position: relative;
+      right: 0;
+      top: 55px;
+      margin: 0 auto;
+      align-items: center;
+      max-width: 300px;
+      gap: 22px;
+      input{
+        width: 100%;
+      }
+      p{
+        font-size: 32px;
+        line-height: 64px;
+      }
+      .input-mess{
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .footer{
+    flex-direction: column;
+    padding: 28px 0 40px 0;
+    align-items: center;
+    height: 190px;
+    .left-section{
+      span{
+        line-height: 24px;
+      }
+
+    }
+    .middle-section{
+      p{
+        line-height: 24px;
+      }
+    }
+  }
 }
